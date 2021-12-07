@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid mt-5 ">
+
+        <!-- name section -->
+        <form id="form" class="row g-3 ">
+            <div class="col-md-6">
+                <label for="inputFirstName" class="form-label"></label>
+                <input type="text" name="firstName" placeholder="First Name" class="form-control" id="inputFirstName">
+                <span class="error-msg firstName"></span>
+            </div>
+            <div class="col-md-6">
+                <label for="inputLastName" class=" form-label"></label>
+                <input type="text" name="lastName" placeholder="Last Name" class=" form-control" id="inputLastName">
+                <span class="error-msg lname"></span>
+            </div>
+            <!-- name section end -->
+
+            <!-- email section -->
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"></label>
+                <input type="email" name="email" placeholder="Email" class=" form-control" id="inputEmail">
+                <span class="error-msg email"></span>
+            </div>
+            <!-- email section end -->
+
+            <!-- Mobile section -->
+            <div class="col-md-6">
+                <label for="inputMobile" class="form-label"></label>
+                <input type="text" name="number" placeholder="Mobile" class="form-control" id="inputMobile">
+                <span class="error-msg number"></span>
+            </div>
+            <!-- Mobile section end-->
+
+            <!-- radio buttons start -->-
+            <div class="col-md-3 mt-5">
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input form-control" name="radio" type="radio" id="radio" value="male">
+                    <label class="form-check-label" for="radio">male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input form-control" name="radio" type="radio" id="radio" value="female">
+                    <label class="form-check-label" for="radio">female</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input form-control" name="radio" type="radio" id="radio" value="other">
+                    <label class="form-check-label" for="radio">other</label>
+                </div>
+                <span class="error-msg gender"></span>
+            </div>
+            <!-- radio buttons end -->
+
+            <!-- address section start -->
+            <div class="col-md-8 mt-4">
+                <label for="inputAddress" class="form-label"></label>
+                <input type="text" name="address" placeholder="Address" class="form-control" id="inputAddress"
+                    placeholder="144/25 Central Delhi">
+                <span class="error-msg address"></span>
+            </div>
+            <!-- address section end -->
+
+            <!-- password section start -->
+
+            <div class="col-md-6">
+                <label for="inputPass" class=" form-label"></label>
+                <input type="password" name="password" placeholder="password" class=" form-control" id="inputPass">
+                <span class="error-msg password"></span>
+            </div>
+            <div class="col-md-6">
+                <label for="inputPass" class=" form-label"></label>
+                <input type="password" name="password" placeholder="confirm password" class=" form-control" id="inputPass">
+                <span class="error-msg cnfPassword"></span>
+            </div>
+            <!-- password section end -->
+            <!-- check box start -->
+            <div class="col-dm-3  mt-5">
+                <div class="form-check">
+                    <input class="form-check-input form-control" name="checkbox" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        I agree  all the details are submitted by me.
+                    </label>
+
+                    <span class="error-msg cnfCheck"></span>
+                </div>
+            </div>
+            <!-- check box end -->
+            <div class="col-md-3 mt-5  ">
+                <button type="submit" name="submit" class="btn btn-primary" id="button">submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
